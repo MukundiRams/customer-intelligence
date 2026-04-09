@@ -50,3 +50,81 @@ customer base:
 - Model should be retrained quarterly as customer behaviour evolves
 
 
+## Set Up Guide
+
+
+### Prerequisites
+- Python 3.10 or higher installed on your machine
+- A Google account (for the Gemini API key)
+
+---
+
+### 1. Clone The Repository
+
+```bash
+git clone https://github.com/MukundiRams/customer-intelligence.git
+cd customer-intelligence
+```
+
+## 2. Create A Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+Activate it — the command differs depending on your terminal:
+
+**Command Prompt (CMD):**
+```cmd
+venv\Scripts\activate
+```
+
+**PowerShell:**
+```powershell
+venv\Scripts\Activate.ps1
+```
+
+> If PowerShell blocks the script with a security error, run this first,
+> then try activating again:
+> ```powershell
+> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+> ```
+
+
+---
+
+## 3. Install Poetry
+
+With your virtual environment active, install Poetry:
+
+```powershell
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+```
+
+Verify the installation:
+
+```bash
+poetry --version
+```
+
+---
+
+## 4. Install Project Dependencies
+
+Poetry will read the `pyproject.toml` file and install everything
+automatically:
+
+```bash
+poetry install
+```
+
+This installs all required packages including pandas, scikit-learn,
+seaborn, matplotlib, numpy, scipy, plotly, jupyterlab, google-genai
+and python-dotenv.
+
+---
+
+## 5. Set Up Your API Key
+
+Create a file called `.env` in the project root folder and add your
+Google Gemini API key:
