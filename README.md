@@ -66,7 +66,7 @@ git clone https://github.com/MukundiRams/customer-intelligence.git
 cd customer-intelligence
 ```
 
-## 2. Create A Virtual Environment
+### 2. Create A Virtual Environment
 
 ```bash
 python -m venv venv
@@ -93,7 +93,7 @@ venv\Scripts\Activate.ps1
 
 ---
 
-## 3. Install Poetry
+### 3. Install Poetry
 
 With your virtual environment active, install Poetry:
 
@@ -109,7 +109,7 @@ poetry --version
 
 ---
 
-## 4. Install Project Dependencies
+### 4. Install Project Dependencies
 
 Poetry will read the `pyproject.toml` file and install everything
 automatically:
@@ -124,7 +124,7 @@ and python-dotenv.
 
 ---
 
-## 5. Set Up Your API Key
+### 5. Set Up Your API Key
 
 Create a file called `.env` in the project root folder and add your
 Google Gemini API key:
